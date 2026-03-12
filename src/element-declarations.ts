@@ -1,11 +1,11 @@
-import type { DetailConfig } from './detail.config';
+import type { DetailConfig } from './detail-config';
 import type {
   DetailSavedEvent,
   ListViewCurrentRecordEvent,
   ListViewDetailModeEvent,
   ListViewTotalRecordsEvent,
 } from './events';
-import type { ListViewConfig } from './list-view.config';
+import type { ListViewConfig } from './list-view-config';
 
 export type HalixListViewElement = HTMLElement & {
   config: ListViewConfig;

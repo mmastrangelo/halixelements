@@ -1,4 +1,4 @@
-export type { DetailConfig } from './detail.config';
+export type { DetailConfig } from './detail-config';
 import './element-declarations.js';
 export type {
   DetailSavedEvent,
@@ -7,4 +7,4 @@ export type {
   ListViewTotalRecordsEvent,
 } from './events';
 export type { HalixListViewElement, HalixStandaloneDetailElement } from './element-declarations';
-export type { ListViewConfig } from './list-view.config';
+export type { ListViewConfig } from './list-view-config';
