@@ -13,8 +13,3 @@ export interface ListViewDetailModeEvent {
 export interface DetailSavedEvent {
   data: Record<string, unknown>;
 }
-
-export const HALIX_ELEMENT_EVENT_NAMES = {
-  listView: ['currentRecord', 'detailMode', 'totalRecords'],
-  standaloneDetail: ['saved'],
-} as const;

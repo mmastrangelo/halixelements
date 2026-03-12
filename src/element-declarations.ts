@@ -1,11 +1,11 @@
-import type { DetailConfig } from './detail-config';
+import type { DetailConfig } from './detail.config';
 import type {
   DetailSavedEvent,
   ListViewCurrentRecordEvent,
   ListViewDetailModeEvent,
   ListViewTotalRecordsEvent,
 } from './events';
-import type { ListViewConfig } from './list-view-config';
+import type { ListViewConfig } from './list-view.config';
 
 export type HalixListViewElement = HTMLElement & {
   config: ListViewConfig;
@@ -44,11 +44,6 @@ export type HalixStandaloneDetailElement = HTMLElement & {
     options?: boolean | AddEventListenerOptions
   ): void;
 };
-
-export const HALIX_ELEMENT_TAGS = [
-  'halix-list-view',
-  'halix-standalone-detail',
-] as const;
 
 declare global {
   interface HTMLElementTagNameMap {

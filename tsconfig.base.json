@@ -4,8 +4,6 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "checkJs": true,
-    "allowJs": true,
     "declaration": true,
     "declarationMap": true,
     "allowSyntheticDefaultImports": true
@@ -22,8 +20,6 @@
   ],
   "exclude": [
     "node_modules",
-    "lib",
-    "tests",
-    "**/*.test.ts"
+    "lib"
   ]
 }

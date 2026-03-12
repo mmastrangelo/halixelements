@@ -9,15 +9,3 @@ export interface DetailConfig {
   saveUrl?: string;
   detailEventModule?: string;
 }
-
-export const DETAIL_CONFIG_FIELDS = [
-  'dataType',
-  'dataElementId',
-  'key',
-  'title',
-  'formTemplateKey',
-  'formTemplateId',
-  'fullObjectUrl',
-  'saveUrl',
-  'detailEventModule',
-] as const;

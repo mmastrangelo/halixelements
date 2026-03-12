@@ -1,7 +1,7 @@
 {
-  "name": "halix-platform-elements-sdk-test-unscoped",
-  "version": "1.0.2",
-  "description": "Temporary unscoped esm.sh validation package",
+  "name": "@halix/platform-elements-sdk",
+  "version": "1.0.0",
+  "description": "Halix Platform Elements SDK types for custom elements",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mmastrangelo/halixelements.git"
@@ -10,14 +10,13 @@
   "bugs": {
     "url": "https://github.com/mmastrangelo/halixelements/issues"
   },
-  "keywords": [],
-  "author": "",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "ISC",
+  "customElements": "custom-elements.json",
   "types": "./lib/cjs/types/index.d.ts",
   "main": "./lib/cjs/index.js",
   "files": [
     "lib/**/*",
-    "LICENSE"
+    "custom-elements.json"
   ],
   "engines": {
     "node": ">=14.0.0"
@@ -29,6 +28,9 @@
     "typescript": {
       "optional": true
     }
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "clean": "rm -rf ./lib",
