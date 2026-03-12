@@ -1,6 +1,6 @@
 {
   "name": "@halix/platform-elements-sdk",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Halix Platform Elements SDK types for custom elements",
   "repository": {
     "type": "git",
@@ -16,7 +16,11 @@
   "types": "./lib/cjs/types/index.d.ts",
   "main": "./lib/cjs/index.js",
   "files": [
-    "lib/**/*",
+    "lib/cjs/index.js",
+    "lib/cjs/types/**/*",
+    "lib/esm/index.mjs",
+    "lib/esm/index.js.map",
+    "lib/esm/types/**/*",
     "LICENSE"
   ],
   "engines": {
