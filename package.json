@@ -1,7 +1,7 @@
 {
   "name": "@halix/platform-elements-sdk-test",
-  "version": "1.0.0",
-  "description": "Halix Platform Elements SDK test package for esm.sh validation",
+  "version": "1.0.1",
+  "description": "Temporary esm.sh validation package",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mmastrangelo/halixelements.git"
@@ -17,10 +17,11 @@
   "main": "./lib/cjs/index.js",
   "files": [
     "lib/cjs/index.js",
-    "lib/cjs/types/**/*",
+    "lib/cjs/types/index.d.ts",
+    "lib/cjs/types/index.d.ts.map",
     "lib/esm/index.mjs",
     "lib/esm/index.js.map",
-    "lib/esm/types/**/*",
+    "lib/esm/types/index.d.ts",
     "LICENSE"
   ],
   "engines": {
