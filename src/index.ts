@@ -1,5 +1,5 @@
 export type { DetailConfig } from './detail.config';
-import './element-declarations';
+import './element-declarations.js';
 export type {
   DetailSavedEvent,
   ListViewCurrentRecordEvent,

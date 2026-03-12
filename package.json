@@ -1,6 +1,6 @@
 {
   "name": "@halix/platform-elements-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Halix Platform Elements SDK types for custom elements",
   "repository": {
     "type": "git",
