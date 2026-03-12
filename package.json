@@ -1,7 +1,7 @@
 {
-  "name": "@halix/platform-elements-sdk-test",
-  "version": "1.0.1",
-  "description": "Temporary esm.sh validation package",
+  "name": "halix-platform-elements-sdk-test-unscoped",
+  "version": "1.0.0",
+  "description": "Temporary unscoped esm.sh validation package",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mmastrangelo/halixelements.git"
@@ -34,9 +34,6 @@
     "typescript": {
       "optional": true
     }
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "scripts": {
     "clean": "rm -rf ./lib",

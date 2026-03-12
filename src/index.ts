@@ -6,7 +6,7 @@ export interface TestPayload {
 export const TEST_VERSION = '1.0.1';
 
 export const TEST_CONSTANTS = {
-  packageName: '@halix/platform-elements-sdk-test',
+  packageName: 'halix-platform-elements-sdk-test-unscoped',
   hello: 'world',
 } as const;
 
