@@ -11,6 +11,7 @@ export type {
 export { HALIX_ELEMENT_TAGS } from './element-declarations.js';
 export type { HalixListViewElement, HalixStandaloneDetailElement } from './element-declarations';
 export { LIST_VIEW_CONFIG_FIELDS, LIST_VIEW_LOCATIONS } from './list-view-config.js';
+export { getHalixElementsSdkInfo, HALIX_PLATFORM_ELEMENTS_VERSION } from './runtime.js';
 export type { ListViewConfig } from './list-view-config';
 
 export const HALIX_PLATFORM_ELEMENTS_SDK = {
