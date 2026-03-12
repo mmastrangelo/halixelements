@@ -45,6 +45,11 @@ export type HalixStandaloneDetailElement = HTMLElement & {
   ): void;
 };
 
+export const HALIX_ELEMENT_TAGS = [
+  'halix-list-view',
+  'halix-standalone-detail',
+] as const;
+
 declare global {
   interface HTMLElementTagNameMap {
     'halix-list-view': HalixListViewElement;
