@@ -44,11 +44,11 @@ export const HALIX_PLATFORM_ELEMENTS_VERSION = '1.0.8';
 
 export function getHalixElementsSdkInfo() {
   return {
-    packageName: '@halix/platform-elements-sdk',
+    packageName: '@halix/platform-elements-sdk-test',
     version: HALIX_PLATFORM_ELEMENTS_VERSION,
   };
 }
 
 export const HALIX_PLATFORM_ELEMENTS_SDK = {
-  packageName: '@halix/platform-elements-sdk',
+  packageName: '@halix/platform-elements-sdk-test',
 };

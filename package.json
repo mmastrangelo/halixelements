@@ -1,7 +1,7 @@
 {
-  "name": "@halix/platform-elements-sdk",
-  "version": "1.0.8",
-  "description": "Halix Platform Elements SDK types for custom elements",
+  "name": "@halix/platform-elements-sdk-test",
+  "version": "1.0.0",
+  "description": "Halix Platform Elements SDK test package for esm.sh validation",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mmastrangelo/halixelements.git"
