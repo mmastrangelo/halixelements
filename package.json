@@ -1,6 +1,6 @@
 {
   "name": "halix-platform-elements-sdk-test-unscoped",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Temporary unscoped esm.sh validation package",
   "repository": {
     "type": "git",
@@ -16,12 +16,7 @@
   "types": "./lib/cjs/types/index.d.ts",
   "main": "./lib/cjs/index.js",
   "files": [
-    "lib/cjs/index.js",
-    "lib/cjs/types/index.d.ts",
-    "lib/cjs/types/index.d.ts.map",
-    "lib/esm/index.mjs",
-    "lib/esm/index.js.map",
-    "lib/esm/types/index.d.ts",
+    "lib/**/*",
     "LICENSE"
   ],
   "engines": {
