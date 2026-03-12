@@ -1,7 +1,7 @@
 {
-  "name": "@halix/elements-sdk",
+  "name": "@halix/platform-elements-sdk",
   "version": "1.0.0",
-  "description": "Halix Elements SDK types for custom elements",
+  "description": "Halix Platform Elements SDK types for custom elements",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mmastrangelo/halixelements.git"
