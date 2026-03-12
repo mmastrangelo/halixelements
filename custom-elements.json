@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0.0",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/index.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "tagName": "halix-list-view",
+          "name": "HalixListViewElement",
+          "customElement": true,
+          "members": [
+            {
+              "kind": "field",
+              "name": "config",
+              "privacy": "public",
+              "type": {
+                "text": "ListViewConfig"
+              },
+              "description": "Configuration for the list view component"
+            }
+          ],
+          "events": [
+            {
+              "name": "currentRecord",
+              "type": {
+                "text": "CustomEvent<ListViewCurrentRecordEvent>"
+              },
+              "description": "Emitted when the selected record changes"
+            },
+            {
+              "name": "detailMode",
+              "type": {
+                "text": "CustomEvent<ListViewDetailModeEvent>"
+              },
+              "description": "Emitted when detail mode is entered or exited"
+            },
+            {
+              "name": "totalRecords",
+              "type": {
+                "text": "CustomEvent<ListViewTotalRecordsEvent>"
+              },
+              "description": "Emitted when the total record count changes"
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "tagName": "halix-standalone-detail",
+          "name": "HalixStandaloneDetailElement",
+          "customElement": true,
+          "members": [
+            {
+              "kind": "field",
+              "name": "config",
+              "privacy": "public",
+              "type": {
+                "text": "DetailConfig"
+              },
+              "description": "Configuration for the standalone detail component"
+            }
+          ],
+          "events": [
+            {
+              "name": "saved",
+              "type": {
+                "text": "CustomEvent<DetailSavedEvent>"
+              },
+              "description": "Emitted when the record is saved"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

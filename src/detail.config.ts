@@ -7,4 +7,5 @@ export interface DetailConfig {
   formTemplateId?: string;
   fullObjectUrl?: string;
   saveUrl?: string;
+  detailEventModule?: string;
 }

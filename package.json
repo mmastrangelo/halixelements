@@ -2,10 +2,21 @@
   "name": "@halix/elements-sdk",
   "version": "1.0.0",
   "description": "Halix Elements SDK types for custom elements",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmastrangelo/halixelements.git"
+  },
+  "homepage": "https://github.com/mmastrangelo/halixelements#readme",
+  "bugs": {
+    "url": "https://github.com/mmastrangelo/halixelements/issues"
+  },
+  "license": "ISC",
+  "customElements": "custom-elements.json",
   "types": "./lib/cjs/types/index.d.ts",
   "main": "./lib/cjs/index.js",
   "files": [
-    "lib/**/*"
+    "lib/**/*",
+    "custom-elements.json"
   ],
   "engines": {
     "node": ">=14.0.0"
@@ -17,6 +28,9 @@
     "typescript": {
       "optional": true
     }
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "clean": "rm -rf ./lib",
