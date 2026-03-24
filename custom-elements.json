@@ -7,6 +7,100 @@
       "declarations": [
         {
           "kind": "class",
+          "tagName": "halix-attribute-input",
+          "name": "HalixAttributeInputElement",
+          "customElement": true,
+          "members": [
+            {
+              "kind": "field",
+              "name": "config",
+              "privacy": "public",
+              "type": {
+                "text": "AttributeInputConfig"
+              },
+              "description": "Configuration for the metadata-driven attribute input component"
+            }
+          ],
+          "events": [
+            {
+              "name": "objectChange",
+              "type": {
+                "text": "CustomEvent<AttributeInputObjectChangeEvent>"
+              },
+              "description": "Emitted with the mutated object after the input changes"
+            },
+            {
+              "name": "valueChange",
+              "type": {
+                "text": "CustomEvent<AttributeInputValueChangeEvent>"
+              },
+              "description": "Emitted with the current field value after the input changes"
+            },
+            {
+              "name": "focusChange",
+              "type": {
+                "text": "CustomEvent<AttributeInputFocusChangeEvent>"
+              },
+              "description": "Emitted when the rendered input loses focus"
+            },
+            {
+              "name": "enter",
+              "type": {
+                "text": "CustomEvent<void>"
+              },
+              "description": "Emitted when Enter is pressed while the rendered input has focus"
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "tagName": "halix-gateway-payment",
+          "name": "HalixGatewayPaymentElement",
+          "customElement": true,
+          "members": [
+            {
+              "kind": "field",
+              "name": "config",
+              "privacy": "public",
+              "type": {
+                "text": "GatewayPaymentConfig"
+              },
+              "description": "Configuration for the gateway payment component"
+            }
+          ],
+          "events": [
+            {
+              "name": "gatewayPreauth",
+              "type": {
+                "text": "CustomEvent<GatewayPaymentPreauthEvent>"
+              },
+              "description": "Emitted whenever gateway preauthorization parameters change"
+            },
+            {
+              "name": "billingUpdated",
+              "type": {
+                "text": "CustomEvent<GatewayPaymentBillingInfoEvent>"
+              },
+              "description": "Emitted when billing information is updated"
+            },
+            {
+              "name": "paymentValidity",
+              "type": {
+                "text": "CustomEvent<boolean>"
+              },
+              "description": "Emitted when payment validity changes"
+            },
+            {
+              "name": "savedPaymentMethods",
+              "type": {
+                "text": "CustomEvent<boolean>"
+              },
+              "description": "Emitted when the active gateway reports whether saved payment methods exist"
+            }
+          ]
+        },
+        {
+          "kind": "class",
           "tagName": "halix-list-view",
           "name": "HalixListViewElement",
           "customElement": true,
