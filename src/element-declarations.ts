@@ -1,3 +1,18 @@
+/**
+ * @description Typed DOM declarations for the Halix Elements SDK custom elements.
+ *
+ * This module covers the four exported element tags:
+ * - `halix-list-view`
+ * - `halix-standalone-detail`
+ * - `halix-attribute-input`
+ * - `halix-gateway-payment`
+ *
+ * Import with:
+ * `import '@halix/platform-elements-sdk';`
+ *
+ * Use this module when you need the typed element interfaces and event payloads
+ * associated with the SDK's prebuilt Halix web components.
+ */
 import type { AttributeInputConfig } from './attribute-input.config';
 import type { DetailConfig } from './detail.config';
 import type { GatewayPaymentConfig } from './gateway-payment.config';

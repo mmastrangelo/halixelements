@@ -1,3 +1,15 @@
+/**
+ * @description Configuration for the `halix-list-view` web component.
+ *
+ * Import with:
+ * `import '@halix/platform-elements-sdk';`
+ *
+ * Use this when you want a platform-native list UI with built-in pagination,
+ * selection, row actions, and optional detail-launch behavior.
+ *
+ * Basic Lit usage:
+ * `html\`<halix-list-view .config=${listConfig}></halix-list-view>\``
+ */
 export type ListActionDisplay = 'buttons' | 'menu';
 export type ListResourceType = 'filter' | 'display';
 export type ListActionCategory = 'toolbar' | 'row' | 'selection';

@@ -1,3 +1,15 @@
+/**
+ * @description Configuration for the `halix-standalone-detail` web component.
+ *
+ * Import with:
+ * `import '@halix/platform-elements-sdk';`
+ *
+ * Use this when you want the platform's standard metadata-driven record detail
+ * or form experience instead of building the full form yourself.
+ *
+ * Basic Lit usage:
+ * `html\`<halix-standalone-detail .config=${detailConfig}></halix-standalone-detail>\``
+ */
 export interface DetailConfig {
   /**
    * Object type code used when resolving the current object from session context.

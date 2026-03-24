@@ -1,5 +1,14 @@
 /**
- * Configuration for `halix-attribute-input`.
+ * @description Configuration for the `halix-attribute-input` web component.
+ *
+ * Import with:
+ * `import '@halix/platform-elements-sdk';`
+ *
+ * Use this when you want a single metadata-driven field renderer that respects
+ * Halix attribute types, validation rules, formatting, and codesets.
+ *
+ * Basic Lit usage:
+ * `html\`<halix-attribute-input .config=${fieldConfig}></halix-attribute-input>\``
  *
  * This is a thin wrapper around the platform's metadata-driven attribute input renderer. The runtime resolves the
  * attribute metadata from `dataElementId` plus `attributeId` and then chooses the actual control to render from that
