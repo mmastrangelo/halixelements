@@ -444,10 +444,21 @@ export interface ListViewColumns extends ListResource {
   listId?: string;
 }
 
+export interface ListViewColumn {
+  id: string;
+  name: string;
+  display: string;
+  sort: string;
+  hidden?: boolean;
+}
+
 export interface ListViewFilter {
   id: string;
   name: string;
-  filter: string;
+  /**
+   * Filter expression string. Omit or use `''` for no additional filtering (shows all accessible records).
+   */
+  filter?: string;
   columnSetId?: string;
 }
 
@@ -481,11 +492,8 @@ export interface ListViewConfig<TDataElementId extends string = string> {
 
   /**
    * Root data element to query.
-   *
-   * The public type keeps this optional for backwards compatibility, but the wrapper throws if it is missing or
-   * blank. Treat this as required.
    */
-  dataElementId?: TDataElementId;
+  dataElementId: TDataElementId;
 
   /**
    * Optional parent data element that constrains the list's scope.
@@ -502,7 +510,7 @@ export interface ListViewConfig<TDataElementId extends string = string> {
    * The framework supports system-driven sources such as parent/grandparent/session tokens and a `literal` mode.
    * When using `literal`, also provide `literalParentKey`.
    */
-  parentKeySource?: string;
+  parentKeySource?: 'orgProxyKey' | 'userProxyKey' | 'literal' | (string & {});
 
   /**
    * Literal parent key value to use when `parentKeySource` is `literal`.
@@ -541,8 +549,17 @@ export interface ListViewConfig<TDataElementId extends string = string> {
    * The wrapper supplies an empty array when omitted, but a usable list normally needs at least one display
    * definition. In the underlying list system, the first entry is the default display and should usually be the most
    * performant option.
+   *
+   * Minimal example:
+   * ```ts
+   * const listConfig: ListViewConfig = {
+   *   dataElementId: 'student',
+   *   columns: [{ id: 'basic', name: 'Basic', display: 'firstName,lastName', sort: 'lastName:asc' }],
+   *   filters: [{ id: 'all', name: 'All', filter: '' }],
+   * };
+   * ```
    */
-  columns?: ListViewColumns[];
+  columns?: ListViewColumn[];
 
   /**
    * System-defined filters available in the list's filter resources.

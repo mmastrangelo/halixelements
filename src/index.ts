@@ -19,4 +19,4 @@ export type {
   HalixListViewElement,
   HalixStandaloneDetailElement
 } from './element-declarations';
-export type { ListViewConfig } from './list-view.config';
+export type { ListViewColumn, ListViewConfig, ListViewFilter } from './list-view.config';
