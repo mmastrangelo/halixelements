@@ -86,7 +86,7 @@ export interface ListConditionalActionConfig {
  * The builder exposes only this subset even though the lower-level detail component supports additional parameters.
  */
 export interface ListDetailActionConfig extends ListConditionalActionConfig {
-  formTemplateKeys?: string[];
+  formTemplateKeys: string[];
   autoSave?: boolean;
   hideListControls?: boolean;
 }
@@ -152,7 +152,7 @@ export type ListSelectionActionId =
 export interface ListToolbarAddAction extends ListActionBase {
   id: 'add';
   actionType: 'add';
-  actionConfig?: ListDetailActionConfig;
+  actionConfig: ListDetailActionConfig;
 }
 
 export interface ListToolbarGridEditAction extends ListActionBase {
@@ -192,13 +192,13 @@ export interface ListToolbarOpenInvoiceAction extends ListActionBase {
 export interface ListRowDetailsAction extends ListActionBase {
   id: 'details';
   actionType: 'details';
-  actionConfig?: ListRowDetailActionConfig;
+  actionConfig: ListRowDetailActionConfig;
 }
 
 export interface ListRowDetailsNewTabAction extends ListActionBase {
   id: 'detailsNewTab';
   actionType: 'detailsNewTab';
-  actionConfig?: ListRowDetailActionConfig;
+  actionConfig: ListRowDetailActionConfig;
 }
 
 export interface ListRowFoldersAction extends ListActionBase {
