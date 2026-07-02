@@ -151,27 +151,32 @@ export type ListSelectionActionId =
 
 export interface ListToolbarAddAction extends ListActionBase {
   id: 'add';
+  icon: 'fa-plus';
   actionType: 'add';
   actionConfig: ListDetailActionConfig;
 }
 
 export interface ListToolbarGridEditAction extends ListActionBase {
   id: 'gridEdit';
+  icon: 'fa-edit';
   actionType: 'gridEdit';
 }
 
 export interface ListToolbarPrintListAction extends ListActionBase {
   id: 'printList';
+  icon: 'fa-print';
   actionType: 'printList';
 }
 
 export interface ListToolbarImportAction extends ListActionBase {
   id: 'import';
+  icon: 'fa-upload';
   actionType: 'import';
 }
 
 export interface ListToolbarOpenInvoiceAction extends ListActionBase {
   id: 'openInvoice';
+  icon: 'fa-file-invoice';
   actionType: 'dynamicModal';
 
   /**
@@ -191,36 +196,42 @@ export interface ListToolbarOpenInvoiceAction extends ListActionBase {
 
 export interface ListRowDetailsAction extends ListActionBase {
   id: 'details';
+  icon: 'fa-edit';
   actionType: 'details';
   actionConfig: ListRowDetailActionConfig;
 }
 
 export interface ListRowDetailsNewTabAction extends ListActionBase {
   id: 'detailsNewTab';
+  icon: 'fa-external-link-alt';
   actionType: 'detailsNewTab';
   actionConfig: ListRowDetailActionConfig;
 }
 
 export interface ListRowFoldersAction extends ListActionBase {
   id: 'folders';
+  icon: 'fa-folder';
   actionType: 'folders';
   actionConfig?: ListConditionalActionConfig;
 }
 
 export interface ListRowAddToCartAction extends ListActionBase {
   id: 'addToCart';
+  icon: 'fa-shopping-cart';
   actionType: 'dynamicModal';
   actionConfig: ListDynamicModuleActionConfig<'AddPurchasableToCartModule'>;
 }
 
 export interface ListRowCopyAction extends ListActionBase {
   id: 'copy';
+  icon: 'fa-copy';
   actionType: 'copy';
   actionConfig: ListCopyActionConfig;
 }
 
 export interface ListRowChangeHistoryAction extends ListActionBase {
   id: 'changeHistory';
+  icon: 'fa-history';
   actionType: 'dynamicModal';
 
   /**
@@ -234,6 +245,7 @@ export interface ListRowChangeHistoryAction extends ListActionBase {
 
 export interface ListRowOpenWorkflowAction extends ListActionBase {
   id: 'openWorkflow';
+  icon: 'fa-search';
   actionType: 'dynamicModal';
 
   /**
@@ -246,6 +258,7 @@ export interface ListRowOpenWorkflowAction extends ListActionBase {
 
 export interface ListRowModifyAccessAction extends ListActionBase {
   id: 'modifyAccess';
+  icon: 'fa-user-shield';
   actionType: 'dynamicModal';
 
   /**
@@ -260,26 +273,31 @@ export interface ListRowModifyAccessAction extends ListActionBase {
 
 export interface ListSelectionMassEditAction extends ListActionBase {
   id: 'massEdit';
+  icon: 'fa-magic';
   actionType: 'massEdit';
 }
 
 export interface ListSelectionMassDeleteAction extends ListActionBase {
   id: 'massDelete';
+  icon: 'fa-times';
   actionType: 'massDelete';
 }
 
 export interface ListSelectionMassDeleteEmptyListAction extends ListActionBase {
   id: 'massDeleteEmptyList';
+  icon: 'fa-trash';
   actionType: 'massDeleteEmptyList';
 }
 
 export interface ListSelectionPrintFormsAction extends ListActionBase {
   id: 'printForms';
+  icon: 'fa-print';
   actionType: 'printForms';
 }
 
 export interface ListSelectionAssignPurchasesAction extends ListActionBase {
   id: 'assignPurchases';
+  icon: 'fa-user-tag';
   actionType: 'dynamicModal';
 
   /**
@@ -295,6 +313,7 @@ export interface ListSelectionAssignPurchasesAction extends ListActionBase {
 
 export interface ListSelectionSendPurchaseMessageAction extends ListActionBase {
   id: 'sendPurchaseMessage';
+  icon: 'fa-paper-plane';
   actionType: 'dynamicModal';
 
   /**
@@ -307,6 +326,7 @@ export interface ListSelectionSendPurchaseMessageAction extends ListActionBase {
 
 export interface ListSelectionNotifyPeopleAction extends ListActionBase {
   id: 'notifyPeople';
+  icon: 'fa-paper-plane';
   actionType: 'dynamicModal';
 
   /**
@@ -322,6 +342,7 @@ export interface ListSelectionNotifyPeopleAction extends ListActionBase {
 
 export interface ListSelectionMassInitiateWorkflowAction extends ListActionBase {
   id: 'massInitiateWorkflow';
+  icon: 'fa-play';
   actionType: 'dynamicModal';
 
   /**
@@ -334,6 +355,7 @@ export interface ListSelectionMassInitiateWorkflowAction extends ListActionBase 
 
 export interface ListSelectionRefreshWorkflowInstancesAction extends ListActionBase {
   id: 'refreshWorkflowInstances';
+  icon: 'fa-rotate';
   actionType: 'httpGet';
 
   /**
@@ -348,6 +370,7 @@ export interface ListSelectionRefreshWorkflowInstancesAction extends ListActionB
 
 export interface ListSelectionBypassWorkflowStepsAction extends ListActionBase {
   id: 'bypassWorkflowSteps';
+  icon: 'fa-step-forward';
   actionType: 'dynamicModal';
 
   /**
