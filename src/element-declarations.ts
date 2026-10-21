@@ -1,11 +1,12 @@
 /**
  * @description Typed DOM declarations for the Halix Elements SDK custom elements.
  *
- * This module covers the four exported element tags:
+ * This module covers the five exported element tags:
  * - `halix-list-view`
  * - `halix-standalone-detail`
  * - `halix-attribute-input`
  * - `halix-gateway-payment`
+ * - `halix-add-to-cart`
  *
  * Import with:
  * `import '@halix/platform-elements-sdk';`
@@ -13,10 +14,13 @@
  * Use this module when you need the typed element interfaces and event payloads
  * associated with the SDK's prebuilt Halix web components.
  */
+import type { AddToCartConfig } from './add-to-cart.config';
 import type { AttributeInputConfig } from './attribute-input.config';
 import type { DetailConfig } from './detail.config';
 import type { GatewayPaymentConfig } from './gateway-payment.config';
 import type {
+  AddToCartErrorEvent,
+  AddToCartItemAddedEvent,
   AttributeInputFocusChangeEvent,
   AttributeInputObjectChangeEvent,
   AttributeInputValueChangeEvent,
@@ -125,8 +129,32 @@ export type HalixGatewayPaymentElement = HTMLElement & {
   ): void;
 };
 
+/**
+ * `halix-add-to-cart` adds one object of a payable data element to the platform shopping cart. The object must
+ * belong to a payable element and the price comes from the server.
+ */
+export type HalixAddToCartElement = HTMLElement & {
+  config: AddToCartConfig;
+  addEventListener(
+    type: 'cartItemAdded',
+    listener: (e: CustomEvent<AddToCartItemAddedEvent>) => void,
+    options?: boolean | AddEventListenerOptions
+  ): void;
+  addEventListener(
+    type: 'cartError',
+    listener: (e: CustomEvent<AddToCartErrorEvent>) => void,
+    options?: boolean | AddEventListenerOptions
+  ): void;
+  addEventListener(
+    type: string,
+    listener: EventListenerOrEventListenerObject,
+    options?: boolean | AddEventListenerOptions
+  ): void;
+};
+
 declare global {
   interface HTMLElementTagNameMap {
+    'halix-add-to-cart': HalixAddToCartElement;
     'halix-attribute-input': HalixAttributeInputElement;
     'halix-gateway-payment': HalixGatewayPaymentElement;
     'halix-list-view': HalixListViewElement;

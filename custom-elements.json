@@ -7,6 +7,39 @@
       "declarations": [
         {
           "kind": "class",
+          "tagName": "halix-add-to-cart",
+          "name": "HalixAddToCartElement",
+          "customElement": true,
+          "members": [
+            {
+              "kind": "field",
+              "name": "config",
+              "privacy": "public",
+              "type": {
+                "text": "AddToCartConfig"
+              },
+              "description": "Configuration identifying the payable object to add to the cart; the price comes from the server"
+            }
+          ],
+          "events": [
+            {
+              "name": "cartItemAdded",
+              "type": {
+                "text": "CustomEvent<AddToCartItemAddedEvent>"
+              },
+              "description": "Emitted with the cart and its items after the object is added"
+            },
+            {
+              "name": "cartError",
+              "type": {
+                "text": "CustomEvent<AddToCartErrorEvent>"
+              },
+              "description": "Emitted with the error message when the add fails, including the server's reason for a rejected object"
+            }
+          ]
+        },
+        {
+          "kind": "class",
           "tagName": "halix-attribute-input",
           "name": "HalixAttributeInputElement",
           "customElement": true,

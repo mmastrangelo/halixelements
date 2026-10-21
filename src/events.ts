@@ -51,3 +51,22 @@ export interface GatewayPaymentPreauthEvent {
   totalAmount?: number;
   waiveFee?: boolean;
 }
+
+/**
+ * Detail of `cartItemAdded` from `halix-add-to-cart`: the cart the object was added to and the cart's items
+ * after the add, with server-computed prices.
+ */
+export interface AddToCartItemAddedEvent {
+  cart: { objKey: string; [key: string]: unknown };
+  items: Array<{
+    shoppingCartItem: { objKey: string; itemKey: string; itemQuantity: number; calculatedPrice: number; [key: string]: unknown };
+    name: string;
+    [key: string]: unknown;
+  }>;
+}
+
+/**
+ * Detail of `cartError` from `halix-add-to-cart`: the message shown beside the button, which is the server's
+ * reason when the cart rejected the object.
+ */
+export type AddToCartErrorEvent = string;
