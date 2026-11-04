@@ -39,7 +39,16 @@ export interface AddToCartConfig {
   label?: string;
 
   /**
-   * Optional cart item form data stored on the cart line.
+   * Optional form data stored on the cart line, such as the shopper's choices. It is not displayed in the cart; put
+   * text the shopper should see in `displayInfo`.
    */
   formData?: Record<string, unknown>;
+
+  /**
+   * Optional plain-text lines the shopper sees on the cart row and the receipt, e.g. `['Reference: A-17']`.
+   *
+   * The server trims each line, drops empty ones, and rejects more than 5 lines, a line over 200 characters, or a line
+   * with line breaks, control characters or angle brackets; the component shows the server's message.
+   */
+  displayInfo?: string[];
 }
